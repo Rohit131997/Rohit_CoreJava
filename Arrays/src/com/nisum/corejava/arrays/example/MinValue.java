@@ -5,7 +5,9 @@ public class MinValue
 	public static void main(String[] args) 
 	{
 		int a[] = {10,2,44,23,56,12,33,87,65,11};
+		// Starting min value is 0
 		int min = a[0];
+		// starting postion is 0
 		int pos = 0;
 		for(int i=0; i<10; i++)
 		{
