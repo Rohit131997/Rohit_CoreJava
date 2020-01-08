@@ -17,3 +17,4 @@ class Test {
 		System.out.println("Id: " + obj.id + " Name: " + obj.name);
 	}
 }
+ 
