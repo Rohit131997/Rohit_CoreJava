@@ -34,7 +34,7 @@ public class DemoConstructor {
 	}
 
 	 static public void  main(String[] args) {
-		DemoConstructor d1 = new DemoConstructor();// passing the value to constructor
+		DemoConstructor d1 = new DemoConstructor(21,10.6);// passing the value to constructor
 
 		System.out.println(d1.value1);
 		System.out.println(d1.value2);
