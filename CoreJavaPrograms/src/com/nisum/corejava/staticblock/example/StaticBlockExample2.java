@@ -1,11 +1,11 @@
 package com.nisum.corejava.staticblock.example;
 
 public class StaticBlockExample2 {
-    // filename: Main.java
-        static int data1;
+    // Static block
         static {
             System.out.println("static block called ");
         }
+        // Constructor without any parameters
    public StaticBlockExample2(){
             System.out.println("Constructor called");
         }
