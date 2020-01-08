@@ -9,34 +9,34 @@ package com.nisum.corejava.constructors.examples;
  */
 
 public class DemoConstructor {
-	int x;
-	double b;
+	int value1;
+	double value2;
 
 //Create a class constructor for the DemoConstructor class
 	public DemoConstructor()// default constructor
 	{
-		this.x = 5;
+		this.value1 = 5;
 		System.out.println("Default Constructor");
 	}
 
-	public DemoConstructor(int y)// parameterized constructor with Integer argument
+	public DemoConstructor(int value3)// parameterized constructor with Integer argument
 	{
-		this.x = y;
+		this.value1 = value3;
 		System.out.println("Constructor with Integer argument");
 	}
 
-	public DemoConstructor(int z, double a)// parameterized constructor with Integer and Double argument
+	public DemoConstructor(int value4, double value5)// parameterized constructor with Integer and Double argument
 	{
-		this.x = z;
-		this.b = a;
+		this.value1 = value4;
+		this.value2 = value5;
 		System.out.println("Constructor with Integer and Double argument");
 
 	}
 
 	 static public void  main(String[] args) {
-		DemoConstructor d1 = new DemoConstructor(10,1.9);// passing the value to constructor
+		DemoConstructor d1 = new DemoConstructor();// passing the value to constructor
 
-		System.out.println(d1.x);
-		System.out.println(d1.b);
+		System.out.println(d1.value1);
+		System.out.println(d1.value2);
 	}
 }
