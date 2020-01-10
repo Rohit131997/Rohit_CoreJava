@@ -1,4 +1,4 @@
-package com.nisum.corejava.exceptions.examples;
+package com.nisum.corejava.try_catch_finally.examples;
 
 public class Exception_example {
     public static void main(String args[]) {

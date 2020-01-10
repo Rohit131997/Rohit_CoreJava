@@ -14,7 +14,7 @@ public class ExceptionProg2 {
 		num2 = 0;
 		try {
 			result = num1 / num2;
-		} catch (Exception e) {
+		} catch (ArithmeticException ae) {
 			// Modifying the exception occurred
 			System.out.println(num1 / (num2 + 5));
 		}

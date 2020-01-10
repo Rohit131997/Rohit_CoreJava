@@ -14,7 +14,7 @@ public class ExceptionProg3 {
 			// The array value requested is not available and is shows
 			// "ArrayIndexOutOfBoundException"
 			System.out.println(arr[7]);
-		} catch (Exception e) {
+		} catch (Exception ae) {
 			// Either printing e we are giving a statement
 			System.out.println("The Array value is no available");
 		}

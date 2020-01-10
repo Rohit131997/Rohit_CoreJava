@@ -14,8 +14,8 @@ public class ExceptionProg1 {
 			int value = 10 / 0;
 		}
 		// catch block which handles the exception will shows the type of exception
-		catch (Exception e) {
-			System.out.println(e);
+		catch (ArithmeticException ae) {
+			System.out.println(ae);
 		}
 		// remaining program
 		System.out.println("The program is excecuted");
