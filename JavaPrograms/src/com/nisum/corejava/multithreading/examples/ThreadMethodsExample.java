@@ -14,8 +14,8 @@ class ThreadMethodsExample extends Thread {
 				// sleep method
 				Thread.sleep(800);
 
-			} catch (Exception e) {
-				System.out.println(e);
+			} catch (Exception ex) {
+				System.out.println(ex);
 			}
 			System.out.println(loop);
 		}
@@ -37,8 +37,8 @@ class MethodImplement {
 		try {
 			// join method
 			tobj1.join();
-		} catch (Exception e) {
-			System.out.println(e);
+		} catch (Exception ex) {
+			System.out.println(ex);
 		}
 		// isAlive method
 		System.out.println("Thread1 Status :" + tobj1.isAlive());
