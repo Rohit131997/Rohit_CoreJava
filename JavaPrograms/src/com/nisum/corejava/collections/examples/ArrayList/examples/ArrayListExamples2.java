@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.nisum.corejava.collections.examples;
+package com.nisum.corejava.collections.examples.ArrayList.examples;
 
 import java.util.*;
 
