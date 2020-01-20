@@ -1,12 +1,12 @@
 package com.nisum.corejava.innerthread.example;
 
 public class Bank {
-    int amt = 1000;
+    int amount = 1000;
 
     // Synchronized method for withdrawing amount
-    synchronized void withdraw(int amt) {
+    synchronized void withdraw(int amount) {
         System.out.println("Withdrawing the amount ");
-        if (this.amt < amt) {
+        if (this.amount < amount) {
             System.out.println("Less balance, please deposit the money");
             try {
                 // The thread withdraw is in waiting state
@@ -15,14 +15,14 @@ public class Bank {
                 System.out.println(ie);
             }
         }
-        this.amt = this.amt - amt;
+        this.amount = this.amount - amount;
         System.out.println("Withdraw is completed");
     }
 
     // Synchronized method for deposit amount
-    synchronized void deposit(int amt) {
+    synchronized void deposit(int amount) {
         System.out.println("Going to deposit the money");
-        this.amt = this.amt + amt;
+        this.amount = this.amount + amount;
         System.out.println("Money deposited");
         // release the thread which is in waiting state
         notify();
