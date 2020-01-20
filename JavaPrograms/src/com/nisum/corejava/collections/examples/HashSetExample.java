@@ -12,26 +12,29 @@ import java.util.*;
 public class HashSetExample {
 	public static void main(String[] args) {
 		// Creating a Hash set
-		HashSet<String> obj = new HashSet<>();
+		HashSet<String> names = new HashSet<>();
+		// Size of set before inserting elements
+		System.out.println( "Size of Set :" + names.size());
 		// adding elements
-		System.out.println(obj.add("Chari"));
-		System.out.println(obj.add("Giri"));
-		System.out.println(obj.add("Das"));
-		System.out.println(obj.add("Suri"));
+		System.out.println(names.add("Chari"));
+		System.out.println(names.add("Giri"));
+		// null insertion is possible
+		System.out.println(names.add(null));
+		System.out.println(names.add("Suri"));
 		// Creating Duplicate element
-		System.out.println(obj.add("Suri"));
+		System.out.println(names.add("Suri"));
 		// Empty or not
-		System.out.println("Is Empty or not :" + obj.isEmpty());
+		System.out.println("Is Empty or not :" + names.isEmpty());
 		// clone method
-		System.out.println("\nThe Clone is :\n" + obj.clone());
-		// size method
-		System.out.println("\nThe size is :\n" + obj.size());
+		System.out.println("The Clone is :\n" + names.clone());
+		// size of set after insertion
+		System.out.println("The size is :\n" + names.size());
 		// removing element from list
-		System.out.println("\nThe Element is removed:\n" + obj.remove("Chari"));
+		System.out.println("The Element is removed:\n" + names.remove("Chari"));
 		// Iterator for String type
-		Iterator<String> itobj = obj.iterator();
-		while (itobj.hasNext()) {
-			System.out.println("\nThe Hash set elemets are :\n" + itobj.next());
+		Iterator<String> iteratorobj = names.iterator();
+		while (iteratorobj.hasNext()) {
+			System.out.println("The Hash set elemets are :\n" + iteratorobj.next());
 		}
 
 	}
