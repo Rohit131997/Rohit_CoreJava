@@ -1,4 +1,4 @@
-package com.nisum.corejava.collections.examples.comparable.compartor.examples;
+package com.nisum.corejava.comparable.comparator.examples;
 
 import java.util.*;
 
