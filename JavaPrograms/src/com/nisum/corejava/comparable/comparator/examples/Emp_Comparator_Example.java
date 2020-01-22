@@ -1,5 +1,7 @@
 package com.nisum.corejava.comparable.comparator.examples;
 
+import com.nisum.corejava.util.MyLogger;
+
 import java.util.*;
 
 public class Emp_Comparator_Example implements Comparator {
@@ -26,6 +28,7 @@ public class Emp_Comparator_Example implements Comparator {
                 ']';
     }
 
+    // Compare method in comparator
     public int compare(Object obj1, Object obj2)
     {
         Emp_Comparator_Example emp1 = (Emp_Comparator_Example)obj1;
@@ -44,7 +47,7 @@ class Demo
         Emp_Comparator_Example emp3 = new Emp_Comparator_Example("Hari",106);
         Emp_Comparator_Example emp4 = new Emp_Comparator_Example("Ramu",102);
 
-        //TreeSet<Emp_Comparator_Example> tobj = new TreeSet<Emp_Comparator_Example>(  );
+        // Treeset with Emp_Comparator_Example type passing constructor
         TreeSet<Emp_Comparator_Example> tobj = new TreeSet<Emp_Comparator_Example>( new Emp_Comparator_Example() );
         tobj.add(emp1);
         tobj.add(emp2);
@@ -55,8 +58,9 @@ class Demo
         {
             while (iterobj.hasNext())
             {
-                System.out.println( iterobj.next() );
+                MyLogger.consoleLogger.info( iterobj.next() );
             }
         }
+
     }
 }

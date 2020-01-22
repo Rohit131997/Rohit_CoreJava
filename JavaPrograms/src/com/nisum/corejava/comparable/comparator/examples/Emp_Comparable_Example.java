@@ -1,6 +1,6 @@
 package com.nisum.corejava.comparable.comparator.examples;
 import java.util.*;
-
+// Implementing Comparable
 class Emp_Comparable_Example implements Comparable
 {
     String name;
@@ -12,6 +12,7 @@ class Emp_Comparable_Example implements Comparable
         this.id = id;
     }
 
+    // toString method
     @Override
     public String toString() {
         return "Employee Data [" +
@@ -19,6 +20,8 @@ class Emp_Comparable_Example implements Comparable
                 ", id=" + id +
                 ']';
     }
+
+    // compareTo method to compare the id's
     public int compareTo(Object obj)
     {
         int id1 = this.id;
@@ -48,6 +51,7 @@ class Test
         Emp_Comparable_Example emp3 = new Emp_Comparable_Example("Hari",106);
         Emp_Comparable_Example emp4 = new Emp_Comparable_Example("Ramu",102);
 
+        // TreeSet of Emp_Comparable_Example type
         TreeSet<Emp_Comparable_Example> tobj = new TreeSet<>(  );
         tobj.add(emp1);
         tobj.add(emp2);
