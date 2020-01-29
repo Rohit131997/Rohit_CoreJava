@@ -1,5 +1,7 @@
 package com.nisum.corejava.java8.examples.lambdaexpressions.examples;
 
+import com.nisum.corejava.util.MyLogger;
+
 @FunctionalInterface
 interface Movietickets {
     // Only one abstract method
@@ -30,8 +32,8 @@ Movietickets tick = new Movietickets() {
 tick.bookTickets();*/
 
 // By using lambda expressions
-Movietickets ticket = () -> System.out.println( "Booked Movie tickets" );
-         ticket.bookTickets();
+        Movietickets ticket = () -> MyLogger.consoleLogger.info( "Booked Movie tickets" );
+        ticket.bookTickets();
 
     }
 
