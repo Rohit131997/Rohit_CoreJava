@@ -11,7 +11,9 @@ public class CountMethod_example {
         List<Integer> marks = Arrays.asList( 56,79,24,10,33 );
 
         // checking no of marks below 35.
-        long failedinexam = marks.stream().filter( num->num<=35 ).count();
+        long failedinexam = marks.stream()
+                .filter( num->num<=35 )
+                .count();
 
         MyLogger.consoleLogger.info( failedinexam );
     }

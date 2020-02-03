@@ -13,7 +13,9 @@ public class FilterMethod_example {
         List<Integer> numbers = Arrays.asList( 10, 33, 45, 65, 44, 76, 92 );
 
         // Filtering the numbers which are divisible of 4
-        List<Integer> divisibleOf4 = numbers.stream().filter( value -> value % 4 == 0 ).collect( Collectors.toList() );
+        List<Integer> divisibleOf4 = numbers.stream()
+                .filter( value -> value % 4 == 0 )
+                .collect( Collectors.toList() );
 
         MyLogger.consoleLogger.info( divisibleOf4 );
     }
