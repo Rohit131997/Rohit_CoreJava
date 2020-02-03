@@ -12,6 +12,8 @@ public class SupplierExample {
         Supplier<String> supplierobj = () -> "No elements Present ";
 
         List<String> listobj = Arrays.asList();
-        MyLogger.consoleLogger.info( listobj.stream().findAny().orElseGet( supplierobj ) );
+        MyLogger.consoleLogger.info( listobj.stream()
+                .findAny()
+                .orElseGet( supplierobj ) );
     }
 }
