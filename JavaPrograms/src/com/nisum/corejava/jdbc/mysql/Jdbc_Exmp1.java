@@ -19,7 +19,7 @@ public class Jdbc_Exmp1 {
 
             //Step 2: loading and registering the driver
             //registering the driver with forName method
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.jdbc.Driver");
 
             //establishing the connection with interface "Connection"
             Connection con = DriverManager.getConnection(url, username, password);
