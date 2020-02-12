@@ -1,9 +1,9 @@
-package com.nisum.corejava.jdbc.mysql;
+package com.corejava.jdbc.mysql;
 
 //Program of connecting the core java to MySql database
 
 
-import com.nisum.corejava.util.MyLogger;
+import com.corejava.util.MyLogger;
 //Step 1: importing the package (java.sql.*;)
 import java.sql.*;
 
