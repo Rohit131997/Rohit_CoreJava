@@ -15,7 +15,7 @@ import com.spring.drivers.Database;
 public class appconfig {
 	@Autowired
     Environment environment;
-
+// bean annotation
 @Bean
 Database MySqlDriver() {
 	MySqlDriver mysql = new MySqlDriver();
