@@ -9,7 +9,7 @@ public class Array_avg {
         int sum = 0;
         for (int loop = 0; loop < numbers.length;loop++)
             sum = sum + numbers[loop];
-        //calculate average value
+        //calculate avg value
         double average = sum / numbers.length;
        MyLogger.consoleLogger.info( "Average value of the array elements is : " + average );
     }
