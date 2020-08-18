@@ -2,6 +2,7 @@ package com.practice.corejava;
 
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 
@@ -20,7 +21,7 @@ public class TreeMapIterator {
 	    
 	    
 	    // Get Set of entries
-	    Set set = treemap.entrySet();
+	    Set<Entry<String,String>> set = treemap.entrySet();
 	    // Get iterator
 	    Iterator it = set.iterator();
 	    // Show TreeMap elements

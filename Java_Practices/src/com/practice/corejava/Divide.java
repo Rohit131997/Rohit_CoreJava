@@ -10,13 +10,13 @@ public class Divide {
         int value2;
         int Total;
 
-        Scanner scannerobj = new Scanner( System.in );
+        Scanner scannerObj = new Scanner( System.in );
 
         System.out.println( "Enter value1: " );
-        value1 = scannerobj.nextInt();
+        value1 = scannerObj.nextInt();
 
         System.out.println( "Enter value2: " );
-        value2 = scannerobj.nextInt();
+        value2 = scannerObj.nextInt();
 
         Total = value1 / value2;
 
